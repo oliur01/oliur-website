@@ -1,10 +1,15 @@
-/* Your existing CSS styles remain here */
-
-/* Additional styles for the modified layout */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+/* Header Styles */
 header {
     position: relative;
     text-align: center;
@@ -28,30 +33,55 @@ header {
     margin: 20px 0;
 }
 
+/* Profile Section Styles */
 .profile {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
 }
 
 .profile-content {
     max-width: 500px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Skills Section Styles */
+.skills {
+    text-align: center;
 }
 
 .skill-row {
     display: flex;
-    flex-wrap: wrap; /* Allow skills to wrap to the next line on smaller screens */
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill {
-    text-align: center;
-    max-width: 300px;
-    margin-bottom: 20px;
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.skill img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+/* Contact Me Section Styles */
 .contact-me {
     text-align: center;
+    margin-top: 50px;
 }
 
 .btn {
@@ -69,7 +99,8 @@ header {
     background-color: #c0392b;
 }
 
-.footer {
+/* Footer Styles */
+footer {
     text-align: center;
     padding: 20px;
     background-color: #2c3e50;
@@ -92,38 +123,21 @@ header {
     text-decoration: underline;
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-    .hero-text {
-        font-size: 2rem;
-    }
-
-    .pro-text {
-        font-size: 1.2rem;
-    }
-
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
     .profile {
         flex-direction: column;
         align-items: center;
     }
 
-    .profile-pic {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
-    }
-
     .profile-content {
-        max-width: 80%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
         text-align: center;
     }
 
     .skill {
-        max-width: 100%;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 12px 24px;
+        flex: 1 1 100%;
     }
 }
