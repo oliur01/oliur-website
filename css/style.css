@@ -40,12 +40,14 @@ header {
 
 .skill-row {
     display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap to the next line on smaller screens */
     justify-content: space-around;
 }
 
 .skill {
     text-align: center;
     max-width: 300px;
+    margin-bottom: 20px;
 }
 
 .contact-me {
@@ -88,4 +90,40 @@ header {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .pro-text {
+        font-size: 1.2rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .profile-content {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .skill {
+        max-width: 100%;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
 }
