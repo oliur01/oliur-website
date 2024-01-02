@@ -8,11 +8,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f7f7f7;
 }
 
 /* Header Section */
 header {
-    background-color: #1abc9c;
+    background-color: #3498db;
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -53,6 +54,11 @@ header {
     width: 100%;
     height: auto;
     border: 2px solid #3498db;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-item:hover img {
+    transform: scale(1.1);
 }
 
 .overlay {
@@ -80,6 +86,10 @@ header {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: -40px;
 }
 
 .profile {
@@ -92,6 +102,7 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-right: 20px;
+    border: 5px solid #3498db;
 }
 
 .profile-content {
@@ -140,7 +151,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
