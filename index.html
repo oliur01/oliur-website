@@ -2,284 +2,348 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🚀 Oliur Rahaman - Web Developer & Entrepreneur</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-    rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      scroll-behavior: smooth; /* Smooth scrolling for anchor links */
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Oliur Rahaman - Web Developer & Entrepreneur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Your custom styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            scroll-behavior: smooth;
+            /* Smooth scrolling for anchor links */
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 60px 0;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
 
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
 
-    .pro-text {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
+        .pro-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
 
-    .entrepreneurial-ventures {
-      background-color: #fff;
-      padding: 60px 0;
-    }
+        .entrepreneurial-ventures {
+            background-color: #fff;
+            padding: 30px 0;
+        }
 
-    .entrepreneurial-ventures h2 {
-      font-size: 2em;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+        .logo-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-    .logo-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
 
-    .card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-    .card:hover {
-      transform: scale(1.05);
-    }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
 
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
 
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
+        .middle-container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .middle-container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 40px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
+        .copyright {
+            font-size: 1em;
+        }
 
-    .copyright {
-      font-size: 1em;
-    }
+        a {
+            color: #333;
+            transition: color 0.3s ease;
+        }
 
-    a {
-      color: #333;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #007bff;
-    }
-  </style>
+        a:hover {
+            color: #007bff;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Hello, I'm Oliur Rahaman</h1>
-      <p class="pro-text">I am a student of Economics and a web development enthusiast. As the head team
-        operator at The Be Princess, I've played a significant role in its growth and success.</p>
-    </div>
-  </header>
+    <header style="background-color: #333; color: #fff; padding: 30px 0;">
+        <div class="container">
+            <h1 style="font-size: 2em; margin-bottom: 10px; color: #f8f8f8;">Hello, I'm Oliur Rahaman</h1>
+            <p class="pro-text" style="font-size: 1em; line-height: 1.6; color: #ddd;">
+                I am not just a student of Economics; I am a visionary and a relentless web development enthusiast.
+                As the driving force behind My Companys, I've orchestrated transformative strategies
+                propelling it to unprecedented heights.
+            </p>
+        </div>
+    </header>
 
-  <section class="entrepreneurial-ventures">
-    <div class="header-content">
-      <h2>Entrepreneurial Ventures</h2>
-      <div class="logo-container">
-        <div class="card">
-          <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank">
-            <img src="images/daesh-logo.jpg" alt="Daesh Logo">
-            <div class="overlay">Daesh Men's Clothing</div>
-          </a>
-        </div>
-        <!-- Repeat the structure for other ventures -->
-      </div>
-    </div>
-  </section>
+    <!-- Entrepreneurial Ventures Section -->
+    <section class="entrepreneurial-ventures" style="background-color: #fff; padding: 30px 0;">
+        <div class="container">
+            <h2 style="font-size: 1.8em; text-align: center; margin-bottom: 20px; color: #333;">Entrepreneurial Ventures</h2>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <a href="https://www.facebook.com/profile.php?id=100088209172995" target="_blank">
+                            <img src="images\samba mart.jpg" alt="Samba Mart" style="max-width: 100%;">
+                            <div class="overlay" style="font-size: 0.8em;">Samba Mart</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Repeat the structure for other ventures -->
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank">
+                            <img src="images\logo 01.jpg" alt="Daesh" style="max-width: 100%;">
+                            <div class="overlay" style="font-size: 0.8em;">Daesh</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank">
+                            <img src="images\Usha Beauty Hub Flower on top .jpeg" alt="Usha Beauty Hub"
+                                style="max-width: 100%;">
+                            <div class="overlay" style="font-size: 0.8em;">Usha Beauty Hub</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank">
+                            <img src="images\trn logo mother.jpg" alt="The Righteous Network" style="max-width: 100%;">
+                            <div class="overlay" style="font-size: 0.8em;">The Righteous Network</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="images/profile-pic.jpg" alt="Picture of Oliur Rahaman">
-      <div class="profile-content">
-        <h2>Hello</h2>
-        <p class="intro">I am a student of Economics and a passionate web developer. I am also the owner of Daesh
-          Men's Clothing, Usha Beauty Hub, Samba Mart, and The Righteous Network. Additionally, I am an active
-          member of the Global Youth Foundation.</p>
-      </div>
-    </div>
+    <!-- My Profile Section -->
+    <div class="middle-container text-center" style="background-color: #f0f0f0; padding: 40px;">
+        <div class="profile">
+            <img class="profile-pic rounded-circle" src="images\profile pic.jpg" alt="Picture of Oliur Rahaman"
+                style="width: 150px; height: 150px; object-fit: cover; border: 5px solid #3498db;">
+            <div class="profile-content mt-3">
+                <h2 style="color: #333; font-size: 2em;">لسَّلَامُ عَلَيْكُمْ</h2>
+                <p class="intro" style="color: #666; font-size: 1.2em;">I am a student of Economics and a passionate web developer. I am also the owner of Daesh Men's Clothing, Usha Beauty Hub, Samba Mart, and The Righteous Network. Additionally, I am an active member of the Global Youth Foundation.</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- Education Section -->
-    <hr>
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <p>Bachelor of Social Sciences (BSS) in Economics from Shahid Shorowardy College (Under Dhaka
-          University) - Present</p>
-      </li>
-      <li>
-        <p>Higher School Certificate (HSC) from BAF Shaheen College, Tejgaon 2019-2020, GPA: 4.00</p>
-      </li>
-      <li>
-        <p>Secondary School Certificate (SSC) from Hazrat Sha Ali Model High School 2017-2019, GPA: 4.74</p>
-      </li>
-      <li>
-        <p>Junior School Certificate (JSC) from Hazrat Sha Ali Model High School 2014-2015, GPA: 4.94</p>
-      </li>
-      <li>
-        <p>Primary School Certificate (PSC) from Dolphin Kinder Garden School 2010-2011, GPA: 4.64</p>
-      </li>
-    </ul>
+    <!-- Education Section -->
+    <hr>
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Degree</th>
+                            <th scope="col">Institution</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BSS in Economics</td>
+                            <td>Shahid Shorowardy College (Under Dhaka University)</td>
+                            <td>Present</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>HSC</td>
+                            <td>BAF Shaheen College, Tejgaon</td>
+                            <td>2019-2020</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>SSC</td>
+                            <td>Hazrat Sha Ali Model High School</td>
+                            <td>2017-2019</td>
+                            <td>4.74</td>
+                        </tr>
+                        <tr>
+                            <td>JSC</td>
+                            <td>Hazrat Sha Ali Model High School</td>
+                            <td>2014-2015</td>
+                            <td>4.94</td>
+                        </tr>
+                        <tr>
+                            <td>PSC</td>
+                            <td>Dolphin Kinder Garden School</td>
+                            <td>2010-2011</td>
+                            <td>4.64</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-    <!-- Work Experience Section -->
-    <hr>
-    <h2>Work Experience</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2019-2020</td>
-          <td>Member of Paribartan Foundation</td>
-        </tr>
-        <tr>
-          <td>2020-2022</td>
-          <td>Head Team Manager at Be Princess Online Cosmetic Store</td>
-        </tr>
-        <tr>
-          <td>2022-2023</td>
-          <td>Taratari Express Hub Incharge, reputed delivery company</td>
-        </tr>
-        <tr>
-          <td>2023-Present</td>
-          <td>Owner of Daesh Men's Clothing, Usha Beauty Hub, Samba Mart, and The Righteous Network</td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- Work Experience Section -->
+    <hr>
+    <div class="container">
+        <h2 class="text-center mb-4">Work Experience</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Dates</th>
+                    <th>Work</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2019-2020</td>
+                    <td>Member of Paribartan Foundation</td>
+                </tr>
+                <tr>
+                    <td>2020-2022</td>
+                    <td>Head Team Manager at Be Princess Online Cosmetic Store</td>
+                </tr>
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Taratari Express Hub Incharge, reputed delivery company</td>
+                </tr>
+                <tr>
+                    <td>2023-Present</td>
+                    <td>Owner of Daesh Men's Clothing, Usha Beauty Hub, Samba Mart, and The Righteous Network</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!-- Skills Section -->
-    <hr>
-    <h2>Skills</h2>
-    <table border="1">
-      <tr>
-        <td>Content Creation</td>
-        <td>★★★✰✰</td>
-      </tr>
-      <tr>
-        <td>Customer Service</td>
-        <td>★★★✰✰</td>
-      </tr>
-      <tr>
-        <td>Data Analysis and Management</td>
-        <td>★★★✰✰</td>
-      </tr>
-      <tr>
-        <td>Web Development (Full Stack)</td>
-        <td>★★★★✰</td>
-      </tr>
-      <tr>
-        <td>Email Marketing</td>
-        <td>★★★★✰</td>
-      </tr>
-      <tr>
-        <td>Digital Marketing (Specialized in Meta)</td>
-        <td>★★★✰✰</td>
-      </tr>
-      <tr>
-        <td>Social Media Management</td>
-        <td>★★★★✰</td>
-      </tr>
-      <tr>
-        <td>Problem Solving</td>
-        <td>★★★✰✰</td>
-      </tr>
-      <tr>
-        <td>CCNA</td>
-        <td>★★★✰✰</td>
-      </tr>
-    </table>
+    <!-- Skills Section -->
+    <hr>
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <table class="table">
+            <tr>
+                <td>Content Creation</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Customer Service</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Data Analysis and Management</td>
+                <td>★★★★✰</td>
+            </tr>
+            <tr>
+                <td>Web Development (Full Stack)</td>
+                <td>★★★★✰</td>
+            </tr>
+            <tr>
+                <td>Email Marketing</td>
+                <td>★★★★✰</td>
+            </tr>
+            <tr>
+                <td>Digital Marketing (Specialized in Meta)</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Social Media Management</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Problem Solving</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>CCNA</td>
+                <td>★★★★✰</td>
+            </tr>
+        </table>
+    </div>
 
-    <!-- Hobbies Section -->
-    <hr>
-    <h2>Hobbies</h2>
-    <ol>
-      <li><a href="your-hobby-link">Your Hobby 1</a></li>
-      <li><a href="your-hobby-link">Your Hobby 2</a></li>
-      <!-- Add more hobbies as needed -->
-    </ol>
 
-    <!-- Contact Links Section -->
-    <hr>
-    <h2>Contact Links</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/oliur-rahaman-61a481219/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://twitter.com/oliurrahaman501" target="_blank">Twitter</a></li>
-      <li><a href="https://www.facebook.com/biraj.rahaman.9/" target="_blank">Meta</a></li>
-      <li><a href="https://oliur01.github.io/CV/?fbclid=IwAR1r-u_Q_jM2fZIYlW4cH9pbS50Yp15dPiKPwdqPAt8G_7NlOcYP-jqxagA"
-          target="_blank">CV</a></li>
-    </ul>
-  </div>
+    <!-- Hobbies Section -->
+    
+            <!-- Add more hobbies as needed -->
+        </ol>
+    </div>
 
-  <!-- Footer Section -->
-  <footer>
-    <p class="copyright">© 2022 Oliur Rahaman. All rights reserved.</p>
-  </footer>
-  <script>
-    // Smooth scroll for anchor links
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
+    <!-- Contact Links Section -->
+    <hr>
+    <h2 class="text-center">Contact Links</h2>
+    <div class="container">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/oliur-rahaman-61a481219/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://twitter.com/oliurrahaman501" target="_blank">Twitter</a></li>
+            <li><a href="https://www.facebook.com/biraj.rahaman.9/" target="_blank">Meta</a></li>
+            <li><a href="https://oliur01.github.io/CV/?fbclid=IwAR1r-u_Q_jM2fZIYlW4cH9pbS50Yp15dPiKPwdqPAt8G_7NlOcYP-jqxagA"
+                    target="_blank">CV</a></li>
+        </ul>
+    </div>
 
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
+    <!-- Footer Section -->
+    <footer>
+        <p class="copyright">© 2022 Oliur Rahaman. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
