@@ -13,107 +13,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
     rel="stylesheet">
   <style>
+    /* Your existing styles */
+
+    /* Additional styles for interactive elements */
+
+    /* Smooth scrolling for anchor links */
     body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
+      scroll-behavior: smooth;
     }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 60px 0;
-      text-align: center;
+    /* Hover effect for links */
+    a {
+      color: #333;
+      transition: color 0.3s ease;
     }
 
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+    a:hover {
+      color: #007bff;
     }
 
-    .pro-text {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-
-    .entrepreneurial-ventures {
-      background-color: #fff;
-      padding: 60px 0;
-    }
-
-    .entrepreneurial-ventures h2 {
-      font-size: 2em;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .logo-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .logo-item {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .logo-item img {
-      max-width: 100%;
+    /* Interactive card effect */
+    .card {
+      position: relative;
+      overflow: hidden;
       border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
 
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-
-    .middle-container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 40px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .profile {
-      display: flex;
-      align-items: center;
-      margin-bottom: 40px;
-    }
-
-    .profile-pic {
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-
-    .profile h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .intro {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-
-    /* Add styling for Education, Work Experience, Skills, Hobbies, and Contact Links sections */
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .copyright {
-      font-size: 1em;
+    .card:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -131,7 +60,7 @@
     <div class="header-content">
       <h2>Entrepreneurial Ventures</h2>
       <div class="logo-container">
-        <div class="logo-item">
+        <div class="card">
           <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank">
             <img src="images/daesh-logo.jpg" alt="Daesh Logo">
             <div class="overlay">Daesh Men's Clothing</div>
@@ -150,6 +79,22 @@
   <footer>
     <p class="copyright">© 2024 Oliur Rahaman. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Additional JavaScript for interactive elements (example: smooth scroll)
+    document.addEventListener('DOMContentLoaded', function () {
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
