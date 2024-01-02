@@ -13,26 +13,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
     rel="stylesheet">
   <style>
-    /* Your existing styles */
-
-    /* Additional styles for interactive elements */
-
-    /* Smooth scrolling for anchor links */
     body {
-      scroll-behavior: smooth;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      scroll-behavior: smooth; /* Smooth scrolling for anchor links */
     }
 
-    /* Hover effect for links */
-    a {
-      color: #333;
-      transition: color 0.3s ease;
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
     }
 
-    a:hover {
-      color: #007bff;
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
 
-    /* Interactive card effect */
+    .pro-text {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .entrepreneurial-ventures {
+      background-color: #fff;
+      padding: 60px 0;
+    }
+
+    .entrepreneurial-ventures h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
     .card {
       position: relative;
       overflow: hidden;
@@ -43,6 +65,49 @@
 
     .card:hover {
       transform: scale(1.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .middle-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 1em;
+    }
+
+    a {
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #007bff;
     }
   </style>
 </head>
@@ -81,9 +146,8 @@
   </footer>
 
   <script>
-    // Additional JavaScript for interactive elements (example: smooth scroll)
+    // Smooth scroll for anchor links
     document.addEventListener('DOMContentLoaded', function () {
-      // Smooth scroll for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
