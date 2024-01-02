@@ -1,147 +1,126 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color: #f5f5f5;
     color: #333;
 }
 
-/* Header Styles */
 header {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    padding: 80px 0;
-    background-color: #3498db;
+    background-color: #1a1a1a;
+    color: #ff6666;
+    padding: 20px;
 }
 
 .header-content {
-    position: relative;
-    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-text {
     font-size: 3rem;
-    margin: 0;
 }
 
 .pro-text {
-    font-size: 1.5rem;
-    margin: 20px 0;
+    font-size: 1.2rem;
 }
 
-/* Profile Section Styles */
+.middle-container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+}
+
 .profile {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-}
-
-.profile-pic {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.profile-content {
-    max-width: 500px;
-    text-align: left;
-}
-
-/* Skills Section Styles */
-.skills {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.skill-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.skill {
-    flex: 1 1 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.skill img {
-    max-width: 100px;
-    margin-bottom: 15px;
-}
-
-/* Contact Me Section Styles */
-.contact-me {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #fff;
-    background-color: #e74c3c;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #c0392b;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2c3e50;
-    color: #fff;
-}
-
-.footer-links {
-    display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.footer a {
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6666;
+}
+
+.profile-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.skills {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+.skill-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skill img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.contact-me {
+    background-color: #1a1a1a;
+    color: #ff6666;
+    padding: 40px;
+}
+
+.btn {
+    background-color: #ff6666;
     color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ff6666;
+    padding: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-link {
+    color: #ff6666;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.footer-link:hover {
+    color: #fff;
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-    .profile {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-pic {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .profile-content {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .skill {
-        flex: 1 1 100%;
-    }
+.copyright {
+    font-size: 0.8rem;
 }
