@@ -1,14 +1,9 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li, hr {
-  margin: 0;
-  padding: 0;
-}
-
 body {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
-  background-color: #f8f8f8;
 }
 
 .container {
@@ -59,9 +54,20 @@ body {
   color: #333;
 }
 
-.skills-section .skill-icon {
-  font-size: 2rem;
-  color: #ff8e8e;
+.skills-section .skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills-section .skill {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.skills-section img {
+  width: 50px;
+  height: 50px;
 }
 
 .contact-section a.btn {
@@ -91,15 +97,4 @@ body {
   font-size: 2.5rem;
   color: #ff6b6b;
   margin-bottom: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 2.5rem;
-  }
-
-  .header p {
-    font-size: 1rem;
-  }
 }
