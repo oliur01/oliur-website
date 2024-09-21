@@ -9,6 +9,7 @@ body {
     background: linear-gradient(135deg, #28313B, #485461);
     color: #fff;
     line-height: 1.6;
+    padding: 0 10px;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #f9a825;
 }
@@ -30,12 +31,25 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
     color: #f9a825;
+}
+
+/* Mobile Menu Adjustment */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
 }
 
 section {
@@ -47,7 +61,7 @@ section {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
     color: #f9a825;
 }
@@ -58,15 +72,27 @@ h2 {
 }
 
 .photo-section img {
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 50%;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .photo-section img {
+        width: 120px;
+    }
 }
 
 .skills {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill-item {
@@ -80,7 +106,7 @@ h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -103,7 +129,7 @@ h2 {
 }
 
 .logo-section img {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin: 10px;
     transition: transform 0.3s;
@@ -140,6 +166,7 @@ form textarea {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
+    width: 100%;
 }
 
 form button {
@@ -172,4 +199,32 @@ footer {
     padding: 10px 0;
     background-color: #1F2C39;
     margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .cv-button, .social-button {
+        padding: 10px 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    form input, form textarea {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 0.9rem;
+        margin: 0 10px;
+    }
 }
