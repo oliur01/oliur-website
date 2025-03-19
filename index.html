@@ -4,131 +4,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description" content="Oliur Rahaman - Professional Digital Marketer and Web Developer">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Oliur Rahaman - Digital Marketer & Web Developer</title>
 </head>
 
 <body>
-    <header>
-        <h1>Oliur Rahaman</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#brands">Brands</a>
-            <a href="#business">My Business</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="photo">
-        <h2>Meet Me</h2>
-        <div class="photo-section">
-            <img src="Photos/profilepic.jpg" alt="Oliur Rahaman Photo">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#hero">
+                    <span>Oliur Rahaman</span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#business">My Business</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Oliur Rahaman, a professional digital marketer and web developer with extensive experience in creating high-impact digital strategies and building innovative web applications.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-item">Digital Marketing</div>
-            <div class="skill-item">SEO & SEM</div>
-            <div class="skill-item">Web Development (MERN Stack)</div>
-            <div class="skill-item">UI/UX Design</div>
-            <div class="skill-item">E-commerce Solutions</div>
-            <div class="skill-item">Machine Learning & AI</div>
-            <div class="skill-item">Social Media Management</div>
-            <div class="skill-item">Content Strategy</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Travel Buzz</h3>
-                <p>A leading travel platform developed for personalized recommendations and stunning UI/UX experience.</p>
-            </div>
-            <div class="project-card">
-                <h3>Be Princess</h3>
-                <p>Boosted their digital presence and achieved substantial growth through an optimized website.</p>
-            </div>
-            <div class="project-card">
-                <h3>Kodomo</h3>
-                <p>Worked closely to enhance brand visibility in the Bangladeshi market.</p>
-            </div>
-            <div class="project-card">
-                <h3>Kidlon</h3>
-                <p>Focused on their digital presence to strengthen their brand in Bangladesh.</p>
-            </div>
-            <div class="project-card">
-                <h3>Pentagon International</h3>
-                <p>Enhanced their digital presence through effective strategies and website development.</p>
-            </div>
-            <div class="project-card">
-                <h3>Ayush Shop</h3>
-                <p>Developed a user-friendly e-commerce platform for enhancing online sales and customer engagement.</p>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Oliur Rahaman</h1>
+                    <h2>Digital Marketer & Web Developer</h2>
+                    <p>Creating impactful digital experiences through strategic marketing and innovative web solutions</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="Photos/profilepic.jpg" alt="Oliur Rahaman Photo">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="brands">
-        <h2>Brands I Work With</h2>
-        <div class="logo-section">
-            <a href="https://www.facebook.com/travelbuzzbd24" target="_blank"><img src="Photos/travelbuzz.jpg" alt="Travel Buzz Logo"></a>
-            <a href="https://www.facebook.com/beprincess.bd" target="_blank"><img src="Photos/beprincess.jpg" alt="Be Princess Logo"></a>
-            <a href="https://www.facebook.com/KodomoBangladesh" target="_blank"><img src="Photos/kodomo.jpg" alt="Kodomo Logo"></a>
-            <a href="https://www.facebook.com/KidlonBabyCare" target="_blank"><img src="Photos/kidlon.jpg" alt="Kidlon Logo"></a>
-            <a href="https://www.facebook.com/pentagonint" target="_blank"><img src="Photos/pentagon.jpg" alt="Pentagon Logo"></a>
-            <a href="https://www.facebook.com/ayushshopbd" target="_blank"><img src="Photos/ayushshop.jpg" alt="Ayushshop Logo"></a>
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Oliur Rahaman, a pioneering AI & ML developer and full-stack web developer, leading the advancement of AI-driven solutions in Bangladesh.
+                        I specialize in artificial intelligence, machine learning, and intelligent automation, alongside MERN stack development and UI/UX design. With a deep passion for AI innovation, I create cutting-edge AI-powered applications, workflow automation systems, and data-driven solutions that transform businesses.</p>
+                    <p>By integrating AI, deep learning, and predictive analytics, I help companies achieve unmatched efficiency, scalability, and intelligent decision-making. As a first-edge AI developer in Bangladesh, I am committed to pushing the boundaries of technology and shaping the future of AI-driven business solutions.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-text">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">36+</span>
+                            <span class="stat-text">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-text">Happy Clients</span>
+                        </div>
+                    </div>
+                    <a href="Oliur_Rahaman.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="business">
-        <h2>My Business</h2>
-        <p>As the owner of YGF Digital, I lead a premier digital agency focused on innovative digital solutions tailored for success. Our services include web development, digital marketing, and IT solutions.</p>
-        <div class="logo-section">
-            <a href="https://ygfdigitalbd.com/" target="_blank"><img src="Photos/ygfdigital.jpg" alt="YGF Digital Logo"></a>
-            <a href="https://www.facebook.com/skinupbd" target="_blank"><img src="Photos/skinupbd.jpg" alt="SkinUp BD Logo"></a>
-            <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank"><img src="Photos/daesh.jpg" alt="Daesh Logo"></a>
-            <a href="https://www.facebook.com/ygf.foundation" target="_blank"><img src="Photos/youthglobalfoundation.jpg" alt="Youth Global Foundation Logo"></a>
+    <section id="skills" class="skills section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web Development (MERN Stack)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>E-commerce Solutions</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Marketing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Digital Marketing</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SEO & SEM</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Social Media Management</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Content Strategy</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Machine Learning & AI</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="cv">
-        <h2>Download My CV</h2>
-        <a href="Oliur_Rahaman.pdf" class="cv-button" target="_blank">Download CV</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <section id="social">
-        <h2>Connect With Me</h2>
-        <div class="social-links">
-            <a href="https://www.facebook.com/biraj.rahaman.9/" target="_blank" class="social-button">Facebook</a>
-            <a href="https://x.com/oliurrahaman501" target="_blank" class="social-button">Twitter</a>
-            <a href="https://www.linkedin.com/in/oliur-rahaman-61a481219/" target="_blank" class="social-button">LinkedIn</a>
-            <a href="https://www.instagram.com/oliurrahaman1/" target="_blank" class="social-button">Instagram</a>
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Photos/travelbuzz.jpg" alt="Travel Buzz Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Buzz</h3>
+                        <p>A leading travel platform developed for personalized recommendations and stunning UI/UX experience.</p>
+                        <div class="project-tags">
+                            <span>Web Development</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Photos/beprincess.jpg" alt="Be Princess Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Be Princess</h3>
+                        <p>Boosted their digital presence and achieved substantial growth through an optimized website.</p>
+                        <div class="project-tags">
+                            <span>Digital Marketing</span>
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Photos/kodomo.jpg" alt="Kodomo Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kodomo</h3>
+                        <p>Worked closely to enhance brand visibility in the Bangladeshi market.</p>
+                        <div class="project-tags">
+                            <span>Digital Marketing</span>
+                            <span>Brand Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Photos/kidlon.jpg" alt="Kidlon Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kidlon</h3>
+                        <p>Focused on their digital presence to strengthen their brand in Bangladesh.</p>
+                        <div class="project-tags">
+                            <span>Brand Strategy</span>
+                            <span>Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Photos/pentagon.jpg" alt="Pentagon International Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pentagon International</h3>
+                        <p>Enhanced their digital presence through effective strategies and website development.</p>
+                        <div class="project-tags">
+                            <span>Web Development</span>
+                            <span>Digital Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Photos/ayushshop.jpg" alt="Ayush Shop Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ayush Shop</h3>
+                        <p>Developed a user-friendly e-commerce platform for enhancing online sales and customer engagement.</p>
+                        <div class="project-tags">
+                            <span>E-commerce</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2024 Oliur Rahaman. All Rights Reserved.</p>
+    <section id="brands" class="brands section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Brands I Work With</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="brands-grid">
+                <a href="https://www.facebook.com/travelbuzzbd24" target="_blank" class="brand-item">
+                    <img src="Photos/travelbuzz.jpg" alt="Travel Buzz Logo">
+                </a>
+                <a href="https://www.facebook.com/beprincess.bd" target="_blank" class="brand-item">
+                    <img src="Photos/beprincess.jpg" alt="Be Princess Logo">
+                </a>
+                <a href="https://www.facebook.com/KodomoBangladesh" target="_blank" class="brand-item">
+                    <img src="Photos/kodomo.jpg" alt="Kodomo Logo">
+                </a>
+                <a href="https://www.facebook.com/KidlonBabyCare" target="_blank" class="brand-item">
+                    <img src="Photos/kidlon.jpg" alt="Kidlon Logo">
+                </a>
+                <a href="https://www.facebook.com/pentagonint" target="_blank" class="brand-item">
+                    <img src="Photos/pentagon.jpg" alt="Pentagon Logo">
+                </a>
+                <a href="https://www.facebook.com/ayushshopbd" target="_blank" class="brand-item">
+                    <img src="Photos/ayushshop.jpg" alt="Ayushshop Logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="business" class="business section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Business</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="business-content">
+                <div class="business-description">
+                    <p>As the owner of YGF Digital, I lead a premier digital agency focused on innovative digital solutions tailored for success. Our services include web development, digital marketing, and IT solutions.</p>
+                </div>
+                <div class="business-logos">
+                    <a href="https://ygfdigitalbd.com/" target="_blank" class="business-logo">
+                        <img src="Photos/ygfdigital.jpg" alt="YGF Digital Logo">
+                        <div class="logo-overlay">
+                            <h4>YGF Digital</h4>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/skinupbd" target="_blank" class="business-logo">
+                        <img src="Photos/skinupbd.jpg" alt="SkinUp BD Logo">
+                        <div class="logo-overlay">
+                            <h4>SkinUp BD</h4>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100089070904043" target="_blank" class="business-logo">
+                        <img src="Photos/daesh.jpg" alt="Daesh Logo">
+                        <div class="logo-overlay">
+                            <h4>Daesh</h4>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/ygf.foundation" target="_blank" class="business-logo">
+                        <img src="Photos/youthglobalfoundation.jpg" alt="Youth Global Foundation Logo">
+                        <div class="logo-overlay">
+                            <h4>Youth Global Foundation</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>oliurrahaman50@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+880 1866 384479</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/biraj.rahaman.9/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/oliurrahaman501" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/oliur-rahaman-61a481219/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/oliurrahaman1/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>© 2025 Oliur Rahaman. All Rights Reserved.</p>
+                </div>
+                <div class="back-to-top">
+                    <a href="#hero">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
